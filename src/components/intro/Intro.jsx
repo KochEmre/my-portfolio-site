@@ -53,7 +53,7 @@ const Intro = () => {
           <p className="i-desc">
             I can develop your Web, Mobile and Desktop Applications and also the
             Embedded Systems Softwares. I have developed this website with using
-            React JS.
+            React JS from scratch.
           </p>
         </div>
         <svg
@@ -115,7 +115,9 @@ const Intro = () => {
         </svg>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
+        <div className="i-bg">
+          <img src={Brain} alt="" className="i-right-img" />
+        </div>
       </div>
     </div>
   );
