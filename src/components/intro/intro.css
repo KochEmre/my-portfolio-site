@@ -1,0 +1,139 @@
+.i {
+  display: flex;
+  height: 100vh; /* tam ekranı kapla*/
+}
+
+/* önce display'i flex yapıp, sonra 2 sine de 1 vererek %50-50 bölüyor */
+/*  */
+.i-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-right {
+  flex: 1;
+  position: relative;
+}
+
+.i-left-wrapper {
+  padding: 0 50px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.i-intro {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.i-name {
+  font-size: 60px;
+}
+
+.i-title {
+  height: 50px;
+  overflow: hidden;
+}
+
+.i-title-item {
+  height: 50px;
+  font-size: 30px; /*TODO: eski font size 30 px.*/
+  font-weight: bold;
+  color: #004071;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.i-title-wrapper {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+.i-bg {
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #004071;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.i-scroll {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+}
+
+@keyframes move {
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateY(-150px);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+.i-card {
+  width: 225px;
+  height: 225px;
+  border-radius: 10px;
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.i-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px){
+  .i{
+    flex-direction: column;
+  }
+
+  .i-name {
+    font-size: 50px;
+  }
+
+  .i-left-wrapper {
+    padding: 5px;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .i-desc{
+    font-size: 14px;
+    padding-top: 15px;
+  }
+
+  .i-title-item {
+    font-size: 20px; /*TODO: eski font size 30 px.*/
+  }
+
+  .i-bg {
+    height: 80%;
+  }
+
+  .i-scroll {
+    display: none;
+  }
+
+}
+  
