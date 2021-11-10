@@ -107,7 +107,14 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1200px){
+  .i-title-item {
+    font-size: 24px;
+    /* height: 40px; */
+  }
+}
+
+@media screen and (max-width: 980px){
   .i{
     flex-direction: column;
   }
@@ -142,4 +149,4 @@
   }
 
 }
-  
+
