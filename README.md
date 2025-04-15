@@ -1,6 +1,6 @@
 # 💼 My Portfolio Site
 
-This is a demo **React-based personal portfolio website** I created when I first started learning React. The goal was to build a clean, responsive, and modern-looking site to showcase my projects and briefly introduce myself as a developer.
+This is a basic **React-based personal portfolio website** I created when I first started learning React. The goal was to build a clean, responsive, and modern-looking site to showcase my projects and briefly introduce myself as a developer.
 
 > 🔰 This project reflects my early steps into the world of React and front-end development.
 
