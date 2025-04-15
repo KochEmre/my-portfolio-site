@@ -11,6 +11,12 @@ This is a basic **React-based personal portfolio website** I created when I firs
 
 ---
 
+## 📸 Screenshots
+
+![Homepage Screenshot](./screenshots/home-page.png)
+
+---
+
 ## 🛠️ Features
 
 - Built with **React.js**
